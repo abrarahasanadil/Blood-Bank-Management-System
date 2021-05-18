@@ -1,0 +1,94 @@
+{% extends "base.html" %} {% block title %}Sign Up - Saving Lives{% endblock %} {% block content
+%}
+<div class = 'box'>
+<div class = 'head'>
+<h1 allign = 'center'>Let's save lives together</h1>
+<br/>
+</div>
+<form method="POST">
+    <h3 allign="center">Sign Up</h3>
+
+    <div class="form-group">
+    <label for="email">Email</label>
+    <input
+        type="email"
+        class="form-control"
+        id="email"
+        name="email"
+        placeholder="Enter Email"
+    />
+    </div>
+
+        <div class="form-group">
+    <label for="name">Name</label>
+    <input
+        type="text"
+        class="form-control"
+        id="name"
+        name="name"
+        placeholder="Enter Name"
+    />
+    </div>
+
+            <div class="form-group">
+    <label for="phone">Phone</label>
+    <input
+        type="tel"
+        class="form-control"
+        id="phone"
+        name="phone"
+        placeholder="Phone Number"
+    />
+    </div>
+
+            <div class="form-group">
+    <label for="blood_type">Blood Group</label>
+    <input
+        type="text"
+        class="form-control"
+        id="blood_type"
+        name="blood_type"
+        placeholder="A+/A-/B+/B-/O+/O-/AB+/AB-"
+    />
+    </div>
+
+            <div class="form-group">
+    <label for="gender">Gender</label>
+<input type="radio" name="gender" value="m"> Male
+<input type="radio" name="gender" value="f"> Female
+
+    </div>
+
+        <div class="form-group">
+    <label for="password1">Password</label>
+    <input
+        type="password"
+        class="form-control"
+        id="password1"
+        name="password1"
+        placeholder="Enter Password"
+    />
+    </div>
+
+        <div class="form-group">
+    <label for="password2">Confirm Password</label>
+    <input
+        type="password"
+        class="form-control"
+        id="password2"
+        name="password2"
+        placeholder="Enter Password"
+    />    
+    </div>
+
+    <br />
+    <button type = "submit" class ="btn btn-info">Submit</button>
+    <br />
+    <br/>
+    <div class='header'>
+        <a id = "login" href = "/login">Already a Member?</a>
+    </div>
+
+    </div>
+</div>
+</form> {% endblock %}

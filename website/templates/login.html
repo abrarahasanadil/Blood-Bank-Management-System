@@ -1,0 +1,42 @@
+{% extends "base.html" %} {% block title %}Login - Saving Lives{% endblock %} {% block content %}
+<div class = 'box'>
+<div class = 'head'>
+<h1 align = 'center'>Welcome Back</h1>
+</div>
+<br/>
+<form method="POST">
+    <h3 align="center">Login</h3>
+
+    <div class="form-group">
+    <label for="email">Email</label>
+    <input
+        type="email"
+        class="form-control"
+        id="email"
+        name="email"
+        placeholder="Enter Email"
+    />
+    </div>
+
+        <div class="form-group">
+    <label for="password">Password</label>
+    <input
+        type="password"
+        class="form-control"
+        id="password"
+        name="password"
+        placeholder="Enter Password"
+    />
+    </div>
+
+    <br />
+
+    <button type = "submit" class ="btn btn-info">Login</button>
+    <br />
+    <br/>
+    <div class='header'>
+        <a id = "signUp" href = "/sign-up">New here?</a>
+    </div>
+</div>
+    </form>
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends "base.html" %} {% block title %}Profile - Saving Lives{% endblock %} {% block content %}
+<div class='home'>
+    <h1 id='dash3'>My Account Info</h1>
+<br/>
+    <div class = 'boxform'>
+        <table class="table table-borderless">
+            {% for row in account %}
+            <tr>
+                <th>Account Id</th><td>{{row.0}}</td>
+            </tr>
+            <tr>
+                <th>Name</th><td>{{row.1}}</td>
+            </tr>
+            <tr>
+                <th>Phone</th><td>{{row.2}}</td>
+            </tr>
+            <tr>
+                <th>Email</th><td>{{row.3}}</td>
+            </tr>
+            <tr>
+                <th>Blood Group</th><td>{{row.4}}</td>
+            </tr>
+            <tr>
+                <th>Gender</th><td>{{row.5}}</td>
+            </tr>
+            <tr>
+                <th>Actions</th><td>
+                        <a href="/update/{{row.0}}" class="btn btn-outline-primary btn-xs" data-toggle="modal" data-target="#modaledit{{row.0}}">Edit</a>
+                        <a href="/delete/{{ row.0 }}" class="btn btn-danger btn-xs" onclick="return confirm('Are You Sure For Delete?')">Delete</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+        <br/>
+        <br/>
+        <br/>
+
+        </div>
+{% endblock %}

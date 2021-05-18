@@ -1,0 +1,30 @@
+{% extends "base.html" %} {% block title %}Dashboard - Saving Lives{% endblock %} {% block content %}
+<div class='home'>
+    <h1 id='dash'>Welcome {{name}}</h1>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+    <div class='box1'>
+        <a id = "dash2" href = "/doctors">Doctors</a>
+    </div>
+
+    <div class='box1'>
+        <a id = "dash2" href = "/bloodbanks">Blood Banks</a>
+    </div>
+
+    <div class='box1'>
+        <a id = "dash2" href = "/bloodstocks">Blood Stocks</a>
+    </div>
+    
+    <div class='box1'>
+        <a id = "dash2" href = "/account">My Account</a>
+    </div>
+
+</div>
+<div class= 'box2'>
+    <h1>YOU ARE 1 OUT OF {{count}}</h1>
+</div>
+
+{% endblock %}

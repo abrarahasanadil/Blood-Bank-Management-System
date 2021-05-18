@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block title %}Blood Stocks - Saving Lives{% endblock %} {% block content %}
+<div class='home'>
+    <h1 id='dash3'> Hope to receive within a short period of time </h1>
+        <div class = 'boxform3'>
+        <table class="table table-borderless">
+            {% for row in bd %}
+            <tr>
+                <th>Patient Id</th><td>{{row.1}}</td>
+            </tr>
+            <tr>
+                <th>Blood Bank Id</th><td>{{row.2}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        </div>
+{% endblock %}

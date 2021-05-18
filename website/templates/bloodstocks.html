@@ -1,0 +1,43 @@
+{% extends "base.html" %} {% block title %}Blood Stocks - Saving Lives{% endblock %} {% block content %}
+<div class='home'>
+    <h1 id='dash3'> Avaialable Now </h1>
+    {% for row in bs %}
+        <div class = 'boxform3'>
+        <table class="table table-borderless">
+            <tr>
+                <th>Transaction Id</th><td>{{row.0}}</td>
+            </tr>
+            <tr>
+                <th>Blood Type</th><td>{{row.1}}</td>
+            </tr>
+            <tr>
+                <th>Donor Id</th><td>{{row.2}}</td>
+            </tr>
+            <tr>
+                <th>Blood Bank Id</th><td>{{row.3}}</td>
+            </tr>
+            <td>
+                    <div class="form-popup" id="myForm">
+
+                <form action="#" method = 'post' class="form-container">
+                    <h1>{{row.1}} Request</h1>
+                    <label for="blood_type"><b>Blood Type</b></label>
+                    <br/>
+                    <input type="text" placeholder="Enter Blood Group" name="blood_type" required>
+
+
+                    <input type="hidden" name='donor_id' value={{row.2}}>
+                    <input type="hidden" name='blood_id' value={{row.3}}>
+                    <input type="hidden" name='bloodtype' value={{row.1}}>
+
+                    <button type="submit" class="btn">Request</button>
+                </form>
+                </div>
+
+            </td>
+        </table>
+        </div>
+    {% endfor %}
+
+
+{% endblock %}
