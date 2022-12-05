@@ -1,8 +1,6 @@
 # Blood-Bank-Management-System
 A Flask website with SQLite database management system about blood bank, managing blood stocks from registered blood banks with user account and admin login
 
-
-<img width="1440" alt="Screenshot 2022-12-05 at 16 35 29" src="https://user-images.githubusercontent.com/66875869/205619382-62dcaa4c-62ea-4603-b136-617c31617506.png">
 <img width="1440" alt="Screenshot 2022-12-05 at 16 35 37" src="https://user-images.githubusercontent.com/66875869/205619416-85758a9b-db82-459f-8a07-1c5d15046a43.png">
 
 
